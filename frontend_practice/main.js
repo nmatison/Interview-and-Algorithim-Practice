@@ -1,14 +1,8 @@
 
-var changeColor = function(color) {
-  
-};
-
 let target = document.getElementById("target");
 target.innerHTML += `<input class="blue" type="submit" value="Blue" />`;
 target.innerHTML += `<input class="green" type="submit" value="Green" />`;
 target.innerHTML += `<input class="red" type="submit" value="Red" />`;
-
-let color;
 
 document.querySelector(".blue").addEventListener("click", function(event) {
     event.preventDefault;
