@@ -5,6 +5,6 @@ span {
 }
 
 span:hover {
-  transition: all 0.7s ease;
+  transition: background-position 0.7s ease;
   background-position:left bottom;
 }
