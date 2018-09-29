@@ -1,3 +1,7 @@
+main {
+  display: flex;
+}
+
 span {
   background: linear-gradient(to left, red 50%, blue 50%);
   background-size: 200%;
@@ -7,4 +11,31 @@ span {
 span:hover {
   transition: background-position 0.7s ease;
   background-position:left bottom;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (orientation: landscape) {
+  * {
+    color: maroon;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  * {
+    color: ghostwhite;
+  }
+}
+
+@media screen and (max-width: 600px), (min-width: 1100px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
