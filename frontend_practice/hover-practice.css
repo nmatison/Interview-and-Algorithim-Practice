@@ -1,0 +1,12 @@
+span {
+  background: linear-gradient(to left, red 50%, blue 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+}
+
+span:hover {
+  transition: all 0.7s ease;
+  background: linear-gradient(to left, red 50%, blue 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+}
