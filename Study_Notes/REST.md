@@ -22,3 +22,10 @@ Uniform interface:
   + Manipulation of resources through representations
   + Self-descriptive messages
   + Hypermedia
+
++ Identification of Resources
+  + Resource refers to anything including: an HTML document, an image, information about a particular user, etc.
+  + Each resource must be uniquely identified by a stable identifier
+    + This means it does not change across interactions or when a state of the resource changes.
+    + If a resource moves to new identifier, the server should send the client a bad for a bad request and give a link to the new location of the resource.
+  
