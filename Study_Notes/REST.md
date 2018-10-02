@@ -15,3 +15,10 @@ Stateless:
 + Server does not know client exists until the client interacts with the server.
 + Server does not keep a record of past requests.
 
+Uniform interface:
++ Constraint that ensures there is a common language between servers and clients that allows each part to be swapped or modified without breaking entire system.
++ 4 sub constraints:
+  + Identification of resources
+  + Manipulation of resources through representations
+  + Self-descriptive messages
+  + Hypermedia
