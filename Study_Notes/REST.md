@@ -9,3 +9,9 @@ Client-server:
 + The network must be made up of clients and servers
 + Client is a computer that sends HTTP requests to a server in order to access server resources
 + REST requires one-to-one communication as opposed to event-based integration which is where each component continuously broadcasts events while listening for events fro other components.
+
+Stateless:
++ Clients and servers do not need to keep track of each other's state.
++ Server does not know client exists until the client interacts with the server.
++ Server does not keep a record of past requests.
+
