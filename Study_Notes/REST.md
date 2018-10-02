@@ -23,9 +23,16 @@ Uniform interface:
   + Self-descriptive messages
   + Hypermedia
 
-+ Identification of Resources
+1. Identification of Resources
   + Resource refers to anything including: an HTML document, an image, information about a particular user, etc.
   + Each resource must be uniquely identified by a stable identifier
     + This means it does not change across interactions or when a state of the resource changes.
     + If a resource moves to new identifier, the server should send the client a bad for a bad request and give a link to the new location of the resource.
+2. Manipulation of Resources through Representations
   
+
+  ## Glossary 
+    URI, URL, URN
+    + A URI identifies while a URL locates. Locators are also identifies so all URLs are URIs but some URIs are not URLs.
+    + Wikipedia - "In computing, a Uniform Resource Locator (URL) is a subset of the Uniform Resource Identifier (URI) that specifies where an identified resource is available and the mechanism for retrieving it."
+    + URN's are Uniform Resource Names and are intended to be unique across both space and time.
