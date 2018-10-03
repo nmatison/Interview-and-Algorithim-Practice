@@ -50,6 +50,9 @@ Response:
   </body>
 </html>
 ```
+
+4. Hypermedia
+  +
   
 
   ## Glossary 
