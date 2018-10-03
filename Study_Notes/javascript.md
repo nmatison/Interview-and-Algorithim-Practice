@@ -26,4 +26,30 @@ elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel", "Otto Ma
 
 Immediate Invoked Function Expression (IIFE)
 
-  +
+  + a function express that is called immediately after you define it.
+  + (surrounding parenthesis) prevents from treating it as a function declaration
+  + final parenthesis() executes the function expression.
+
+```
+var result = [];
+for (var i=0; i < 5; i++) {
+  result.push( function() { return i } );
+}
+console.log( result[1]() ); // 5
+console.log( result[3]() ); // 5
+result = [];
+for (var i=0; i < 5; i++) {
+  (function () {
+    var j = i; // copy current value of i
+    result.push( function() { return j } );
+  })();
+}
+console.log( result[1]() ); // 1
+console.log( result[3]() ); // 3
+
+```
+
++ IIFE's enable us to:
+  + attach private data to a function
+  + create fresh environments
+  + avoids polluting the global namespace.
