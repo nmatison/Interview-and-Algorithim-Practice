@@ -52,7 +52,9 @@ Response:
 ```
 
 4. Hypermedia
-  +
+  + data sent from the server to the client that tells the client what it can do next.
+    + html is a type of hpermedia
+  
   
 
   ## Glossary 
