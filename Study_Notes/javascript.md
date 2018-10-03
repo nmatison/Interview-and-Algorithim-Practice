@@ -1,5 +1,58 @@
 # Javascript
 
+## Prototype
+  + When new object is created the object's prototype is set to newObject.prototype.
+  + The new operator sets it to the new object.
+  ```
+  let animal = {
+  eats: true
+};
+
+function Rabbit(name) {
+  this.name = name;
+}
+
+Rabbit.prototype = animal;
+
+let rabbit = new Rabbit("White Rabbit"); //  rabbit.__proto__ == animal
+
+alert( rabbit.eats ); // true
+```
++ default prototype is an object with the only property `constructor` that points back to the function itself.
++ js does not ensure the right `constructor` value. If you replace the default prototype as a whole then there will be no constructor in it.
++ It would be much better to add/remove properties to the default prototype. or to recreate the constructor entirely.
+
+```
+function Rabbit() {}
+Rabbit.prototype = {
+  jumps: true
+};
+
+let rabbit = new Rabbit();
+alert(rabbit.constructor === Rabbit); // false
+```
+versus
+
+```
+function Rabbit() {}
+
+// Not overwrite Rabbit.prototype totally
+// just add to it
+Rabbit.prototype.jumps = true
+// the default Rabbit.prototype.constructor is preserved
+```
+
+or 
+
+```
+Rabbit.prototype = {
+  jumps: true,
+  constructor: Rabbit
+};
+
+// now constructor is also correct, because we added it
+```
+
 ### Closure
 + A closure is the combination of a function and the lexical environment from which it was declared.
 + Allows a function to access variables from an enclosing scope
