@@ -50,7 +50,9 @@ Graphs
   + A sequence of vertices where each adjacent pair is connected by an edge.
   + **Simple Path (or just path)** is where no vertices or edges are repeated
   + **Trail** - a walk in which no edges are repeated
-
+  + **Closed Walk** Starts and ends at same vertex.
+    + **Length** is determined by the number of edges
+    + **Simple Cycle** a walk with no repetition other than start and end
 
 **Weighted(cost)**
 + value of the edge
@@ -59,6 +61,18 @@ Graphs
 **Unweighted**
 + weighted graph in which all edges have the same weight or no weight
 + Most Optimal path is determined by the number of nodes traversed
+
+**Edge List**
++ Store the indices of the vertices of where they appear in the vertex list.
++ Store the weight
++ Space Complexity O(|E|)
++ Time complexity for finding adjacent nodes is O(|E|)
++ Check if given nodes are connected O(|E|`)
+
+
+**Vertex List**
++ Store the string reference of the vertex
++ Space Complexity => 0(|V|)
 
 
 source = [A Gentle Introduction to Graphs](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
