@@ -14,6 +14,7 @@ Graphs
 + |E| number of edges
 + Facebook is an example of an undirected graph.
 + Twitter is an example of a directed graph.
++ Nodes can be completely disconnected in a graph
 
 Directed Edge
 + Two nodes connected in a specific way.
@@ -30,10 +31,22 @@ Undirected Edge
   + Can be in both Directed and Undirected graphs
   + Example would be a webpage that has a link to itself.
 
-**Multi-Edge**
+**MultiEdge**
   + Occurs more than once in a graph.
   + Can be in both Directed and Undirected graphs
   + Example would be multiple flights between two cities
+
+**Simple Graph**
+  + A graph with no self-loops or multiedges
+  + Simple directed graph the max number of edges is determined by `0 <= |E| <= n(n-1)`
+  + A simple undirected would be `0 <= |E| <= (n(n-1)) / 2`
+  + Graph is considered **Dense** if it has close to the max number of edges
+    + Typically store a dense graph in an adjacency matrix
+  + Graph is considered **Sparse** if it is close to the min number of edges
+    + Typically store a sparse graph in an adjacency list
+
+**Path**
+  + A sequence of vertices where each adjacent pair is connected by an edge.
 
 **Weighted(cost)**
 + value of the edge
