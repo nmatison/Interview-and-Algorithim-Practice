@@ -23,5 +23,9 @@ Undirected Edge
 + Path between two nodes is bidirectional(the origin and destination nodes are not fixed).
 + If all edges are undirected then the graph is referred to as a **undirected graph**.
 
+Weighted
+
+Unweighted
+
 
 source = [A Gentle Introduction to Graphs](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
