@@ -15,14 +15,15 @@ Graphs
 + Facebook is an example of an undirected graph.
 + Twitter is an example of a directed graph.
 + Nodes can be completely disconnected in a graph
++ **Strongly connected Graphs** are directed graphs where there is a path from any vertex to any other vertex.
 
-Directed Edge
+**Directed Edge**
 + Two nodes connected in a specific way.
 + Starting node is called the origin and the one were traveling to is called the destination.
 + Can only travel from the origin to the destination.
 + If all edges are directed then the graph is called a **digraph**
 
-Undirected Edge
+**Undirected Edge**
 + Path between two nodes is bidirectional(the origin and destination nodes are not fixed).
 + If all edges are undirected then the graph is referred to as a **undirected graph**.
 
@@ -45,8 +46,11 @@ Undirected Edge
   + Graph is considered **Sparse** if it is close to the min number of edges
     + Typically store a sparse graph in an adjacency list
 
-**Path**
+**Path (walk)**
   + A sequence of vertices where each adjacent pair is connected by an edge.
+  + **Simple Path (or just path)** is where no vertices or edges are repeated
+  + **Trail** - a walk in which no edges are repeated
+
 
 **Weighted(cost)**
 + value of the edge
