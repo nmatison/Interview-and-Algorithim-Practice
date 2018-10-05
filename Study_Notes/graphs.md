@@ -67,12 +67,16 @@ Graphs
 + Store the weight
 + Space Complexity O(|E|)
 + Time complexity for finding adjacent nodes is O(|E|)
-+ Check if given nodes are connected O(|E|`)
-
++ Check if given nodes are connected O(|E|)
 
 **Vertex List**
 + Store the string reference of the vertex
 + Space Complexity => 0(|V|)
 
+**Adjacency Matrix**
++ Length of the amount of your vertices
++ A Matrix that shows where each vertex has a connection with another
++ An undirected graph will have an adjacency matrix that is split symmetrically so you would only have to traverse through half.
++ A directed graph would have to traverse the entire graph.
 
 source = [A Gentle Introduction to Graphs](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
