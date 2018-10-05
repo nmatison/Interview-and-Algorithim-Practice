@@ -118,7 +118,8 @@ Possibly use a binary Search Tree?
 + Visit a node, mark it visited but do not add the first node to the queue.
 + Visit first child, still have a marker on your first node, then enqueue the first child.
 + Move to the next children and repeat this procedure until there is no more children. Then finally enqueue the first node
-+ 
++ Dequeue the next on your queue and repeat what you did for the first node enqueuing the children but keeping a pointer on the parent.
+
 
 
 
