@@ -78,5 +78,28 @@ Graphs
 + A Matrix that shows where each vertex has a connection with another
 + An undirected graph will have an adjacency matrix that is split symmetrically so you would only have to traverse through half.
 + A directed graph would have to traverse the entire graph.
++ Finding adjacent Nodes
+  + Need to know a nodes index by scanning |V|
+  + Can then scan the adjacency matrix at the found index to find all adjacent nodes
+  + O(v) + O(v) time complexity 
++ Finding if two nodes are connected or not
+  + O(v) due to the same reason as above.
++ You can use a hash to store the names and the indexes for the adjacency matrix to make it O(1) time.
++ Uses o(v ** 2) memory which is good if a graph is dense but bad if it is sparse
+
+
+**Adjacency List**
++ Adjacency Matrix stores redundant information (stores what vertices are not connected to other vertices)
++ Just stores the indices of where a vertex is connected to in an array
++ Space now becomes O(e) instead of O(v ** 2) which is much smaller in real world applications
++ Finding if two nodes are connected or not
+  + O(v) linear search
++ Finding adjacent Nodes
+  + O(v) linear search
++ Even though the time complexity may seem worse, it is actually most likely less in real world applications.
+(Input link to example here)
+
++ Problem comes with inserting and deleting. In a matrix, you can just flip a 0 to a 1, but in an Adjacency List you have to create a new array with a new length in order to push the index of the new edge into the Adjancency list.
+
 
 source = [A Gentle Introduction to Graphs](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
