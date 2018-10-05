@@ -101,5 +101,11 @@ Graphs
 
 + Problem comes with inserting and deleting. In a matrix, you can just flip a 0 to a 1, but in an Adjacency List you have to create a new array with a new length in order to push the index of the new edge into the Adjancency list.
 
+Using a Linked List for an Adjacency List
+  + Each vertex's set of edges would require a Linked List to point to the next edge.
+  + The head would store a reference to the first node. Each node would store it's index in the vertex list, its weight if applicable, and a pointer to the next node. 
+  + Space complexity O(|E| + |V|)
+Possibly use a binary Search Tree?
+
 
 source = [A Gentle Introduction to Graphs](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
