@@ -108,4 +108,18 @@ Using a Linked List for an Adjacency List
 Possibly use a binary Search Tree?
 
 
+**DFS**
++ Uses a stack
++ Push the vertex onto the stack, mark it as visted, visit it's next child
++ If you have no more children to visit then pop the node off of the stack, and move on to the next node on top of the stack, and keep repeating this till you have a node to move to.
+
+**BFS**
++ Uses a queue
++ Visit a node, mark it visited but do not add the first node to the queue.
++ Visit first child, still have a marker on your first node, then enqueue the first child.
++ Move to the next children and repeat this procedure until there is no more children. Then finally enqueue the first node
++ 
+
+
+
 source = [A Gentle Introduction to Graphs](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
