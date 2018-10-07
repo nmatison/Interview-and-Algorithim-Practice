@@ -34,3 +34,9 @@
   + Here you can do the same stuff as componentDidMount. 
   + Most common use case is for updating the DOM in response to prop or state changes.
   + can call setState
+
++ componentWillUnmount 
+  + This is sort of a last request before the component unmounts
+  + This is the place to cancel outgoing network requests and to remove all event listeners associated with the component.
+  + End anything that invovles the component before it unmmounts.
+  + Cannot call setState
