@@ -128,7 +128,22 @@ Possibly use a binary Search Tree?
 
 **Dijkstra's Algorithm**
 + Single Source Shortest Path for a Graph
-+
++ Works on both a directed and non directed graph as long as the weight is a non negative number
++ Needs a Heap and a Map
+  + Allows us to add in O(log n)
+  + extract min- O(log n)
+  + contains - O(1)
+  + decrease - O(log n)
++ Put all nodes into the heap-map with a weight like infinity. Set the weight of the node you are looking for the shortest path to to 0 and extract it from the heap. Then, look at all of its neighbors and set its weight as the value in the heap map.
++ Do another extract min (grab the minimum value in the heap-map) and explore its neighbors. Add their weights to the parents and set it in the hash map.
++ When extracting you are putting in a data structure with the node's value and it's distance from the node you are searching for a path for.
++ you also stick it in another data structure with a key of its value and a value of its parent.
++ Rinse and repeat until you have traversed all nodes.
++ If the current nodes neighbors could have a shorter route to the starting node by looking at your previous paths to get to your current node, then you need to replace that value.
+  + i.e. if d->a is 9 but d-->f-->e-->a is a total of 7, then you need to set d's total distance from a to the one of the least amount.
++ The parent data structure is a way you can follow the path all the way back to your parent by keying in at your node and checking its parent and continuing keying into the parent data structure until you reach the starting node, and your distance data structure will have the shortest path to the starting node as values.
++ Time Complexity is O(Elog(v))
++ Space Complexity is O(E + V)
 
 
 
