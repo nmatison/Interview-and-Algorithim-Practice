@@ -120,6 +120,16 @@ Possibly use a binary Search Tree?
 + Move to the next children and repeat this procedure until there is no more children. Then finally enqueue the first node
 + Dequeue the next on your queue and repeat what you did for the first node enqueuing the children but keeping a pointer on the parent.
 
+**Topological Sort**
++ Create a set to keep track of all of the nodes that have been visited.
++ Create a stack to keep track of the node order.
++ Start at any node. Put that node into the visited set. Check the children of the node. If not visited put it in the visited set.
++ If it has no children put it into the stack. Put it into the stack if it has been fully explored as well.
+
+**Dijkstra's Algorithm**
++ Single Source Shortest Path for a Graph
++
+
 
 
 
