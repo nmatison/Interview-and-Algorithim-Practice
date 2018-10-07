@@ -59,23 +59,23 @@ Rabbit.prototype = {
 + Allow for data encapsulation
   + The idea that some data should not be directly exposed
 
-  ```
+  ```javascript
   function SpringfieldSchool() {
-  let staff = ['Seymour Skinner', 'Edna Krabappel'];
-  return {
+    let staff = ['Seymour Skinner', 'Edna Krabappel'];
+    return {
     getStaff: function() { console.log(staff) },
     addStaff: function(name) { staff.push(name) }
   }}
-```
-let elementary = SpringfieldSchool()
-console.log(elementary)        // { getStaff: ƒ, addStaff: ƒ }
-console.log(staff)             // ReferenceError: staff is not defined
-/* Closure allows access to the staff variable */
-elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel"]
-elementary.addStaff('Otto Mann')
-elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel", "Otto Mann"]
 
-```
+  let elementary = SpringfieldSchool()
+  console.log(elementary)        // { getStaff: ƒ, addStaff: ƒ }
+  console.log(staff)             // ReferenceError: staff is not defined
+  /* Closure allows access to the staff variable */
+  elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel"]
+  elementary.addStaff('Otto Mann')
+  elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel", "Otto Mann"]
+
+  ```
 
 Immediate Invoked Function Expression (IIFE)
 
@@ -83,7 +83,7 @@ Immediate Invoked Function Expression (IIFE)
   + (surrounding parenthesis) prevents from treating it as a function declaration
   + final parenthesis() executes the function expression.
 
-```
+```javascript
 var result = [];
 for (var i=0; i < 5; i++) {
   result.push( function() { return i } );
