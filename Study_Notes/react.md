@@ -11,3 +11,17 @@
   + This is the time to make any calls to your backend routes to get information and set up your state.
   + This is also the time to add any event listeners
   + Can call setState
+
++ componentWillReceiveProps
+  + This will activate before the new props have fully arrived to the component
+  + Takes in nextProps
+  + This is not called on the initial render of the component
+  + Can call setState
+
++ shouldComponentUpdate
+  + Normally, when a component receives props it should update.
+  + However, this is called before it does update.
+  + Takes in nextProps and nextState
+  + This should always return a boolean. The default is true as in yes it should update.
+  + If you are worried about wasted renders or anything of the sort then this is the place to control that.
+  + Cannot call setState.
