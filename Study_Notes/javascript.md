@@ -107,7 +107,7 @@ console.log( result[3]() ); // 3
   + create fresh environments
   + avoids polluting the global namespace.
 
-  ## this
+## this
 
   + `this` is used to access an object
     ```javascript
@@ -155,3 +155,5 @@ console.log( result[3]() ); // 3
     + in the above example `user.hi()`'s value would be `(user, "hi", true)`
 
     + The `()` after the reference type receives the full information about the object and its method. I.E. in `user.hi()` the this is set to the reference base (`user`).
+
+  + Note that arrow functions do not have their own `this`, and this may allow an outer function/object's `this` to be passed down.
