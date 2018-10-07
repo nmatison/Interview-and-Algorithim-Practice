@@ -106,3 +106,22 @@ console.log( result[3]() ); // 3
   + attach private data to a function
   + create fresh environments
   + avoids polluting the global namespace.
+
+  ## this
+
+  + `this` is used to access an object
+    ```javascript
+    let user = {
+    name: "John",
+    age: 30,
+
+    sayHi() {
+      alert(this.name);
+    }
+
+    };
+
+    user.sayHi(); // John
+    ```
+  + Could also use user.name in the above example; however, that would be unreliable if the user variable was reassigned.
+  
