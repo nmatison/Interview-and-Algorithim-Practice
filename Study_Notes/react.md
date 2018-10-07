@@ -25,3 +25,12 @@
   + This should always return a boolean. The default is true as in yes it should update.
   + If you are worried about wasted renders or anything of the sort then this is the place to control that.
   + Cannot call setState.
+
++ componentWillUpdate
+  + It is basically componentWillReceiveProps but it happens have shouldComponentUpdate.
+  + It cannot call setState
+
++ componentDidUpdate
+  + Here you can do the same stuff as componentDidMount. 
+  + Most common use case is for updating the DOM in response to prop or state changes.
+  + can call setState
