@@ -124,6 +124,34 @@ console.log( result[3]() ); // 3
     user.sayHi(); // John
     ```
   + Could also use user.name in the above example; however, that would be unreliable if the user variable was reassigned.
-  
-  + this can be used in any function
-  
+
+  + this can be used in any function and it is evaluated during the run-time.
+
+  + a call of a function that uses this without an object is not normal, and in `use strict` mode this would be undefined in such a scenario. If `use strict` mode is not on, then this would refer to the global object. Like the window in a browser.
+
+  + Reference type
+    + This is a specification type. We can't explicitly use it, but it is used internally by the language. 
+
+    ```javascript
+    let user = {
+    name: "John",
+    hi() { alert(this.name); }
+    }
+
+    // split getting and calling the method in two lines
+    let hi = user.hi;
+    hi(); // Error, because this is undefined
+    ```
+      
+    + Above, hi() throws an error because `hi = user.hi` puts the function into a variable, and then the invocation is completely stand alone so there is no `this`.
+
+    + the `'.'` in `user.hi()` returns a reference type no a function.
+    
+    + there are three values associated with a reference type:
+      1. `base` is the object
+      2. `name` is the property
+      3. `strict` is true if `use strict` is in effect.
+
+    + in the above example `user.hi()`'s value would be `(user, "hi", true)`
+
+    + The `()` after the reference type receives the full information about the object and its method. I.E. in `user.hi()` the this is set to the reference base (`user`).
