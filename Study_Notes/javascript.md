@@ -123,7 +123,7 @@ console.log( result[3]() ); // 3
 
     user.sayHi(); // John
     ```
-  + Could also use user.name in the above example; however, that would be unreliable if the user variable was reassigned.
+  + Could also use `user.name` in the above example; however, that would be unreliable if the user variable was reassigned.
 
   + this can be used in any function and it is evaluated during the run-time.
 
