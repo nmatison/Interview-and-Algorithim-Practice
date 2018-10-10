@@ -157,3 +157,8 @@ console.log( result[3]() ); // 3
     + The `()` after the reference type receives the full information about the object and its method. I.E. in `user.hi()` the this is set to the reference base (`user`).
 
   + Note that arrow functions do not have their own `this`, and this may allow an outer function/object's `this` to be passed down.
+
+## Hoisting
+  + The behavior of moving `var` and `function` declarations to the top of their respective scopes during compilation.
+  + This allows a function to be called before it is defined.
+  + Var declarations are hoisted but not its assignments.
