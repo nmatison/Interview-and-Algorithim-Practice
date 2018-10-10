@@ -10,16 +10,16 @@
 + # and types of actions depend completely on the app
 
 ## Pure and Impure Functions
-Pure Functions:
+**Pure Functions**:
 + Functions whose returned value depends solely on the values of their arguments.
 + No side effects such as network or database calls. They just calculate value. They are predictable.
 + Do not modify the values passed to them, and it will always return the same value for the same arguments.
 
-Impure Functions:
+**Impure Functions**:
 + They may call the database or the network, they may have side effects, they may operate on the DOM, and they may override the values that you pass to them.
 
 ## The Reducer Function
 + State mutations in your app need to be described as a pure function.
   + This function takes the previous state and the action being dispatched and it returns the next state of the app.
   + It is important that the function that handles the state does not modify the state given to it. Pure function = new object.
-+ The `Reducer` takes the previous state of the app and the action being dispatched and returns the next state of the app. It is a pure function.
++ The **Reducer** takes the previous state of the app and the action being dispatched and returns the next state of the app. It is a pure function.
