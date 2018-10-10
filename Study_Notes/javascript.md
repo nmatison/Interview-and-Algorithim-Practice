@@ -162,3 +162,4 @@ console.log( result[3]() ); // 3
   + The behavior of moving `var` and `function` declarations to the top of their respective scopes during compilation.
   + This allows a function to be called before it is defined.
   + Var declarations are hoisted but not its assignments.
+  + Variables declared with let and const remain uninitialised at the beginning of execution whilst variables declared with var are initialised with a value of undefined.
