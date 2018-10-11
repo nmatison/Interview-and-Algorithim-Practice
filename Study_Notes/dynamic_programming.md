@@ -23,3 +23,9 @@ Memoization:
 
 ## Optimal Substructure:
 + A problem has the Optimal Substructure Property if the optimal solution of the given problem can be obtained by using optimal solutions of its subproblems.
+
+## Steps to solve a DP problem
+1) Identify if it is a DP problem
+2) Decide a state expression with the least parameters
+3) Formulate state relationship    
+4) Do tabulation (or add memoization)
