@@ -1,6 +1,6 @@
 # Redux
 
-## The Sing Immutable State Tree
+## The Single Immutable State Tree
 + Initial state is a Javascript Object that contains all the information the app will need.
 + All mutations and changes to the state in Redux are explicit.
 
@@ -23,3 +23,11 @@
   + This function takes the previous state and the action being dispatched and it returns the next state of the app.
   + It is important that the function that handles the state does not modify the state given to it. Pure function = new object.
 + The **Reducer** takes the previous state of the app and the action being dispatched and returns the next state of the app. It is a pure function.
+
+## Store
++ Holds the current application's state object and dispatches actions
++ When you create the store you need to specify the reducer used that controls the state (root reducer)
++ **Get State** retrieves the current state of the Redux Store
++ **dispatch** dispatches actions to change the state of your application.
++ **subscribe** allows you to register a callback that the redux store will call anytime an action has been dispatched, so that you can update the UI of your application.
++ **replaceReducer(nextReducer)** allows you to replace the reducer. An advanced api.
