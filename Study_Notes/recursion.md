@@ -7,6 +7,8 @@
 + Direct recursive is when the function calls the same function within itself.
 + Indirect recursive is when a function calls another function, and they both call each other recursively.
 + A recursive function is **tail recursive** when the recursive call is the last thing executed by the function.
+  + "Tail calls can be implemented without adding a new stack frame to the call stack. Most of the frame of the current procedure is no longer needed, and can be replaced by the frame of the tail call, modified as appropriate (similar to overlay for processes, but for function calls). The program can then jump to the called subroutine. "
+  
 + Memory is allocated in a recursive call by having the memory for the function allocated on top of the memory that is allocated to calling the function and the different copy of the local variables created for each function call. Memory is de-allocated after the function finally hits its base case and exits out through each recursive call.
 
 Disadvantages over iterative functions:
