@@ -163,3 +163,12 @@ console.log( result[3]() ); // 3
   + This allows a function to be called before it is defined.
   + Var declarations are hoisted but not its assignments.
   + Variables declared with let and const remain uninitialised at the beginning of execution whilst variables declared with var are initialised with a value of undefined.
+
+## `new` keyword
++ Functions invoked using the `new` keyword are called constructor functions.
++  `new`
+  + creates a new object
+  + sets the object's prototype to be the prototype of the constructor function
+  + executes the constructor function with this as the newly created object.
+  + Returns the created object. If the constructor returns an object, this object is returned.
+
