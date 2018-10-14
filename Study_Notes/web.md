@@ -16,5 +16,15 @@
 + Session data relies on a cookie token to identify the user for repeat visits.
   + This usually has a sliding expiry time and stored in-process or externally in a state server or database.
   + Best to store server side
-  + Down side to server-side data is scalability. Server resources are required for each duration of session
+  + Down side to server-side data is scalability. Server resources are required for each duration of session##
   + Session data expires after a set amount of time since the server doesnt know when the user has left the site.
+
+
+## Cross-site Scripting (XSS) Attack
+ ### What is it?
+ + Client-side code injection attack
+ + Attacker can execute malicious scripts (payload) into a legitimate website or app.
+ + Most rampant of web app vulnerabilities
+ + Occurs when a we app makes use of unvalidated or unencoded user input
+ + allows an attacker to exploit a vulnerability w/in a website by using the website as a vehicle to deliver a malicious script to the victim's browser.
+ + Can be taken advantage of w/in VBScript, ActiveX, Flash, and JavaScript. Happens the most in JavaScript. 
