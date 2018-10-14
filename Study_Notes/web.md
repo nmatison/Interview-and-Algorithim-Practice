@@ -31,7 +31,14 @@
 
  ### How it works?
  + Goal is to inject a payload into a web page a victim visits. 
- + Social Engineering + injected JS payload
+ + Social Engineering + injected JS pay
+ load
 
  ### What's the worst that can happen?
- + 
+ + Malicious payloads have access to all of the objects on that page including cookies. This access allows the malicious payloads to impersonate a user.
+ + It could alter the dom on that page.
+ + It could use XMLHttpRequests to send HTTP requests with arbitrary content to arbitrary destinations.
+ + Any web app using html5 will expose Malicious payloads to all of HTML5's api's including user's geolocation, webcam, microphone, and specific files from the user's file system.
+ + cookie theft, keylogging, phising, and identity theft are all options here.
+
+ ### 
