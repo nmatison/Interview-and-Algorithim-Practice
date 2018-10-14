@@ -28,3 +28,10 @@
  + Occurs when a we app makes use of unvalidated or unencoded user input
  + allows an attacker to exploit a vulnerability w/in a website by using the website as a vehicle to deliver a malicious script to the victim's browser.
  + Can be taken advantage of w/in VBScript, ActiveX, Flash, and JavaScript. Happens the most in JavaScript. 
+
+ ### How it works?
+ + Goal is to inject a payload into a web page a victim visits. 
+ + Social Engineering + injected JS payload
+
+ ### What's the worst that can happen?
+ + 
