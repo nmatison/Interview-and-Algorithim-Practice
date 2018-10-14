@@ -11,3 +11,10 @@
   + Browser may impose limits on the size of information stored in a cookie.
 
 
+## Client-side vs. Server-side
++ Http is a stateless protocol so web apps have no way of identifying a user from previous visits
++ Session data relies on a cookie token to identify the user for repeat visits.
+  + This usually has a sliding expiry time and stored in-process or externally in a state server or database.
+  + Best to store server side
+  + Down side to server-side data is scalability. Server resources are required for each duration of session
+  + Session data expires after a set amount of time since the server doesnt know when the user has left the site.
