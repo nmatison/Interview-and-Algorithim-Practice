@@ -41,4 +41,5 @@
  + Any web app using html5 will expose Malicious payloads to all of HTML5's api's including user's geolocation, webcam, microphone, and specific files from the user's file system.
  + cookie theft, keylogging, phising, and identity theft are all options here.
 
- ### 
+ ### Anatomy
+ + XSS needs a website, a victim and an attacker.

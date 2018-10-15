@@ -172,3 +172,12 @@ console.log( result[3]() ); // 3
   + executes the constructor function with this as the newly created object.
   + Returns the created object. If the constructor returns an object, this object is returned.
 
+## ES5 vs ES6
++ Block scoping (`let` and `const`)
+  + eliminates iife for the most part
+  + Babel used for browsers that can only read ES5
++ Lexical `this`
+  + this can now always point to the object where it is physically located within with the use of arrow functions
++ Rest parameters, args, and spread
++ Classes
++ Use Strict
