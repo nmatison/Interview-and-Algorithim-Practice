@@ -3,7 +3,7 @@
 ## Prototype
   + When new object is created the object's prototype is set to newObject.prototype.
   + The new operator sets it to the new object.
-  ```
+  ```javascript
   let animal = {
   eats: true
 };
@@ -22,7 +22,7 @@ alert( rabbit.eats ); // true
 + js does not ensure the right `constructor` value. If you replace the default prototype as a whole then there will be no constructor in it.
 + It would be much better to add/remove properties to the default prototype. or to recreate the constructor entirely.
 
-```
+```javascript
 function Rabbit() {}
 Rabbit.prototype = {
   jumps: true
@@ -33,7 +33,7 @@ alert(rabbit.constructor === Rabbit); // false
 ```
 versus
 
-```
+```javascript
 function Rabbit() {}
 
 // Not overwrite Rabbit.prototype totally
@@ -44,7 +44,7 @@ Rabbit.prototype.jumps = true
 
 or 
 
-```
+```javascript
 Rabbit.prototype = {
   jumps: true,
   constructor: Rabbit
